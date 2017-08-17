@@ -3,6 +3,8 @@ import { isMNID, decode} from 'mnid'
 
 const JOSE_HEADER = {typ: 'JWT', alg: 'ES256K'}
 
+/**  @module uport-js/JWT */
+
 /**
 *  Creates a signed JWT given an address which becomes the issuer, a signer, and a payload for which the signature is over.
 *

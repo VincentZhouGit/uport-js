@@ -3,15 +3,13 @@ import { decodeToken } from 'jsontokens'
 import UportLite from 'uport-lite'
 import nets from 'nets'
 
-
 /**
 *    Credentials allows you to easily created signed payloads used in uPort inlcuding
 *    credentials and signed mobile app requests (ex. selective disclosure requests for
 *    for private data). It also provides signature verification over mobile app response,
 *    helper functions and the ability to send push notifications to users.
 */
-
-export default class Credentials {
+class Credentials {
 
   /**
    * Instantiates a new uPort Credentials object
@@ -219,3 +217,5 @@ const configNetworks = (nets) => {
   })
   return nets
 }
+
+export default Credentials
